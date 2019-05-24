@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0; }
+  body a {
+    color: yellow; }
+
+.username {
+  text-transform: capitalize; }
+  .navbar-right .username {
+    vertical-align: text-top; }
+
+.text-warning svg {
+  background-color: black;
+  border-radius: 100%; }
+
+header a.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-rendering: geometricPrecision; }
+
+@media only screen and (max-width: 575px) {
+  header .navbar-right,
+  header .navbar-brand {
+    width: 100%;
+    text-align: center; } }
+
+.main .card-group {
+  background: #ffffff;
+  margin-top: -.9rem;
+  width: 96%;
+  z-index: 1000; }
+
+.main .media {
+  width: 33%; }
+  .main .media > a {
+    display: inline; }
+  .main .media img {
+    width: 100%; }
+
+.main .ql-editor {
+  height: auto;
+  min-height: 100px; }
+  .main .ql-editor.ql-blank::before {
+    font: 300 1.5rem 'Roboto', sans-serif;
+    color: grey; }
+
+.main iframe {
+  height: auto;
+  min-height: 300px;
+  width: 100%; }
+
+.main .post {
+  position: relative; }
+  .main .post .lead p {
+    margin-bottom: 0; }
+  .main .post .card-img-top {
+    border-radius: 0; }
+  .main .post .add-reaction {
+    bottom: -1rem; }
+  .main .post .react {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    right: 1rem;
+    z-index: 1000; }
+    .main .post .react input[type="button"] {
+      cursor: pointer;
+      margin-right: 5px;
+      opacity: 0;
+      position: absolute;
+      width: 0; }
+    .main .post .react span {
+      margin-right: 5px; }
+    .main .post .react .reaction {
+      margin-right: 2px; }
+  .main .post .close svg {
+    margin: -2.5rem .5rem 0 0; }
+
+.sidebar svg,
+.react svg {
+  cursor: pointer; }
+
+.error-handler {
+  text-align: center;
+  transition: all 0.3s ease; }
+  .post .error-handler {
+    bottom: .7rem;
+    left: 30%;
+    position: absolute;
+    right: 30%; }
+
+.invisible {
+  opacity: 0;
+  transition: all 0.3s ease; }
